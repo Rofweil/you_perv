@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Perv Alert</title>
+<style>
+  body {
+    margin:0;
+    overflow:hidden;
+    background:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    color:white;
+    font-family:sans-serif;
+    text-align:center;
+  }
+  .bg {
+    position:fixed;
+    top:50%;
+    left:50%;
+    width:800px;
+    height:auto;
+    transform:translate(-50%, -50%);
+    animation: zoom 4s ease-in-out infinite alternate;
+    opacity:0.25;
+  }
+  @keyframes zoom {
+    0% { transform:translate(-50%, -50%) scale(1); }
+    100% { transform:translate(-50%, -50%) scale(1.4); }
+  }
+  .content {
+    position:relative;
+    z-index:5;
+  }
+  img.fg {
+    max-width:80%;
+    height:auto;
+  }
+</style>
+</head>
+<body>
+  <img src="sus.png" class="bg">
+  <div class="content">
+    <h1>You got caught</h1>
+    <img src="perv.gif" class="fg">
+  </div>
+</body>
+</html>
